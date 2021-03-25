@@ -4,10 +4,10 @@
 
 
 <svelte:head>
-	<title>Welcome tag</title>
+	<title>Welcome tag 1234</title>
 </svelte:head>
 <main>
-	<h1>Hello world!</h1>
+	<h1>Hello world!!!!!kotake</h1>
 
 	<Counter />
 
