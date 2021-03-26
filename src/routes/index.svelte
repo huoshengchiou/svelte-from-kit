@@ -2,9 +2,8 @@
 	import Counter from '$lib/Counter.svelte';
 </script>
 
-
 <svelte:head>
-	<title>Welcome tag 1234</title>
+	<title>svelte Home</title>
 </svelte:head>
 <main>
 	<h1>Hello world!!!!!kotake</h1>
