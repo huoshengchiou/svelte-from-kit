@@ -1,6 +1,10 @@
 <!-- a page can export a load function that runs before the component is created. This function runs both during server-side rendering and in the client, and allows you to get data for a page without (for example) showing a loading spinner and fetching data in onMount. -->
 
 <script context="module">
+	import { onMount, setContext } from 'svelte';
+
+		import { amp, browser, dev } from '$app/env';
+		getContext('')
 	// import fs from "fs/promises"; //node file system //如果在client side執行會fail，因為bowser不支援
     //  console.log('process.cwd()',process.cwd())
 //     const filePath = path.join(process.cwd(), "data", "dummyBack.json");
@@ -29,14 +33,16 @@
 	// 		error: new Error(`Could not load ${url}`)
 	// 	};
 	// }
+	if(browser){
+		console.log('only browser')
+	}
 </script>
 
 <script>
-	import { amp, browser, dev } from '$app/env';
 	import { goto, prefetch, prefetchRoutes } from '$app/navigation';
 
 	// console.log('main script runs',browser,dev);
-    
+  
 	console.log('goto',goto)
 	
 </script>

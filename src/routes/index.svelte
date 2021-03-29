@@ -1,5 +1,9 @@
 <script>
 	import Counter from '$lib/Counter.svelte';
+	import { onMount, setContext } from 'svelte';
+    setContext('from parent', {
+	test:'test'
+    });
 </script>
 
 <svelte:head>
