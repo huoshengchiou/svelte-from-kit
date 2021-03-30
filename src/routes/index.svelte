@@ -1,9 +1,7 @@
 <script>
 	import Counter from '$lib/Counter.svelte';
-	import { onMount, setContext } from 'svelte';
-    setContext('from parent', {
-	test:'test'
-    });
+
+	console.log('loading index');
 </script>
 
 <svelte:head>
