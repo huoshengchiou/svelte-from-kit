@@ -1,7 +1,7 @@
 <script>
 	import Counter from '$lib/Counter.svelte';
 
-	console.log('loading index');
+	console.log('main index loading');
 </script>
 
 <svelte:head>
