@@ -17,7 +17,7 @@
 	<Login on:success={redirectToProfile} />
 	<Reg on:success={redirectToProfile} />
 	<!-- <Counter /> -->
-
+	{import.meta.env.VITE_MESSAGE}
 	<p>Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.</p>
 </main>
 
